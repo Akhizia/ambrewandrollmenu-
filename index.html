@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A.M. Brew & Roll | Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #f0f0f0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: clamp(2.8rem, 8vw, 4.5rem);
+      font-weight: 900;
+      letter-spacing: -2px;
+      line-height: 0.9;
+      margin-bottom: 12px;
+    }
+
+    .logo span {
+      display: block;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #aaa;
+      margin: 20px 0 30px;
+    }
+
+    .contact {
+      font-size: 0.9rem;
+      color: #888;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 24px;
+    }
+
+    .contact a {
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      color: #fff;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 24px;
+      color: #fff;
+      border-left: 4px solid #fff;
+      padding-left: 14px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 10px 0;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .item:last-child {
+      border-bottom: none;
+    }
+
+    .name {
+      font-size: 1.05rem;
+    }
+
+    .price {
+      font-weight: 600;
+      white-space: nowrap;
+      margin-left: 16px;
+    }
+
+    .note {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 4px;
+    }
+
+    .leaf {
+      color: #7dcea0;
+      margin-right: 4px;
+    }
+
+    /* Three columns for drinks */
+    .drinks-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    @media (min-width: 700px) {
+      .drinks-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+      }
+    }
+
+    .category h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #ccc;
+      text-transform: lowercase;
+    }
+
+    /* Meals highlight */
+    .meals .item {
+      padding: 14px 0;
+    }
+
+    .meals .name {
+      font-size: 1.15rem;
+      font-weight: 500;
+    }
+
+    /* Footer CTA */
+    .cta {
+      text-align: center;
+      margin-top: 70px;
+      padding: 40px 20px;
+      border: 1px solid #333;
+      border-radius: 12px;
+    }
+
+    .cta h2 {
+      border: none;
+      padding: 0;
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .cta a:hover {
+      background: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <span>A.M.</span>
+        <span>BREW &amp;</span>
+        <span>ROLL</span>
+      </div>
+      <p class="tagline">After Morning, We Keep Rolling</p>
+      <div class="contact">
+        <a href="https://instagram.com/am.brewandroll" target="_blank">@am.brewandroll</a>
+        <span>0956 600 7556</span>
+        <a href="mailto:ambrewandroll@gmail.com">ambrewandroll@gmail.com</a>
+        <span>Barangay Talisay, Lipa City</span>
+      </div>
+    </header>
+
+    <!-- MEALS & BITES -->
+    <section class="meals">
+      <h2>meals and bites.</h2>
+      <div class="grid">
+        <div class="item">
+          <div>
+            <div class="name">Beef Enoki Rolls</div>
+            <div class="note">Spicy / Not spicy</div>
+          </div>
+          <div class="price">₱90</div>
+        </div>
+        <div class="item">
+          <div class="name">Samyang Omelette</div>
+          <div class="price">₱110</div>
+        </div>
+        <div class="item">
+          <div class="name">Beef Samyang Roll</div>
+          <div class="price">₱155</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COFFEES & DRINKS -->
+    <section>
+      <h2>coffees &amp; drinks.</h2>
+      <div class="drinks-grid">
+
+        <!-- Coffee -->
+        <div class="category">
+          <h3>coffee. <small style="font-weight:400;color:#666">(16oz)</small></h3>
+          <div class="grid">
+            <div class="item">
+              <div class="name">Iced coffee</div>
+              <div class="price">₱90</div>
+            </div>
+            <div class="item">
+              <div class="name">Americano</div>
+              <div class="price">₱85</div>
+            </div>
+            <div class="item">
+              <div class="name"><span class="leaf">🍃</span>Spanish latte</div>
+              <div class="price">₱110</div>
+            </div>
+            <div class="item">
+              <div class="name"><span class="leaf">🍃</span>Cinnamon foamy latte</div>
+              <div class="price">₱115</div>
+            </div>
+            <div class="item">
+              <div class="name">Biscoff latte</div>
+              <div class="price">₱120</div>
+            </div>
+            <div class="item">
+              <div class="name">Einspanner latte</div>
+              <div class="price">₱130</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Non-coffee -->
+        <div class="category">
+          <h3>non-coffee.</h3>
+          <div class="grid">
+            <div class="item">
+              <div class="name">Matcha Latte</div>
+              <div class="price">₱99</div>
+            </div>
+            <div class="item">
+              <div class="name"><span class="leaf">🍃</span>Strawberry Milk</div>
+              <div class="price">₱90</div>
+            </div>
+            <div class="item">
+              <div class="name">Strawberry Matcha</div>
+              <div class="price">₱110</div>
+            </div>
+            <div class="item">
+              <div class="name"><span class="leaf">🍃</span>Milo Choco</div>
+              <div class="price">₱99</div>
+            </div>
+            <div class="item">
+              <div class="name">Milo Chocolate Berry</div>
+              <div class="price">₱110</div>
+            </div>
+            <div class="item">
+              <div class="name"><span class="leaf">🍃</span>Thai Tea</div>
+              <div class="price">₱99</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Egg Coffee -->
+        <div class="category">
+          <h3>egg coffee.</h3>
+          <div class="grid">
+            <div class="item">
+              <div class="name">Vietnamese Egg Coffee</div>
+              <div class="price">₱155</div>
+            </div>
+            <div class="item">
+              <div class="name">Creme Brulee Egg Coffee</div>
+              <div class="price">₱165</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta">
+      <h2>Click here for pre-orders.</h2>
+      <p>Message us on Instagram or Facebook to place your order.</p>
+      <a href="https://instagram.com/am.brewandroll" target="_blank">Order Now →</a>
+    </div>
+
+    <footer>
+      A.M. Brew &amp; Roll · Barangay Talisay, Lipa City
+    </footer>
+
+  </div>
+</body>
+</html>
